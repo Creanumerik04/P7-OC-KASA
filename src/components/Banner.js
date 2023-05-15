@@ -1,14 +1,17 @@
-import "../styles/Banner.css"
-import logo from "../assets/LOGO.svg"
+import bannerImg from "../assets/banner-img.png";
+import "../styles/Banner.css";
 
-function Banner(){
-    return <div className="banner">
-        <img src={logo} alt="Kasa" className="logo-banner"></img>
-        <nav className="navigation">
-        <a href="index.html" className="link-banner accueil">Accueil</a>
-        <a href="contact.html" className="link-banner">A propos</a>
-    </nav>
+function Banner() {
+  return (
+    <div className="banner">
+      <img
+        src={bannerImg}
+        alt="Un paysage de bord de mer"
+        className="banner-img"
+      />
+      <h1 className="banner-text">Chez vous, partout et ailleurs</h1>
     </div>
+  );
 }
 
-export default Banner
+export default Banner;

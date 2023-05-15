@@ -1,0 +1,55 @@
+.header{
+    width: 70%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    width: 20%;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-header{
+    color: #FF6060;
+    text-decoration: none;
+}
+
+.logo-header{
+    margin: 0;
+}
+
+.accueil{
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .header{
+        width: 90%;    
+    }
+    .navigation{
+        width: 35%;
+        font-size: 12px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .link-header{
+        margin: 0 5% 0 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .navigation{
+        width: 40%;
+    }
+    .link-header{
+        margin: 3%;
+    }
+}
