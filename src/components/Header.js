@@ -1,14 +1,15 @@
-import "../styles/Header.css"
-import logo from "../assets/LOGO.svg"
+import "../styles/Header.css";
+import logo from "../assets/LOGO.svg";
 
-function Header(){
-    return <div className="header">
-        <img src={logo} alt="Kasa" className="logo-header" />
-        <nav className="navigation">
-        <a href="index.html" className="link-header accueil">Accueil</a>
-        <a href="contact.html" className="link-header">A propos</a>
-    </nav>
-    </div>
+export default function Header() {
+    return (
+        <div className="header">
+            <nav>
+                <img src={logo} alt="Logo orange Kasa" className="logo_kasa" />
+                <section className="navbar">
+                    
+                </section>
+            </nav>
+        </div>
+    )
 }
-
-export default Header
