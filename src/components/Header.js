@@ -3,13 +3,12 @@ import logo from "../assets/LOGO.svg";
 
 export default function Header() {
     return (
-        <div className="header">
+        <header className="header">
+            <img src={logo} alt="Logo orange Kasa" className="logo_kasa" />
             <nav>
-                <img src={logo} alt="Logo orange Kasa" className="logo_kasa" />
-                <section className="navbar">
-                    
-                </section>
+                <a href="." className="linkNav accueil">Accueil</a>
+                <a href="." className="linkNav">A propos</a>
             </nav>
-        </div>
+        </header>
     )
 }
