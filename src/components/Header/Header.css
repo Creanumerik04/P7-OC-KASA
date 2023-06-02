@@ -30,10 +30,6 @@ nav {
   white-space: nowrap;
 }
 
-.accueil {
-  text-decoration: underline;
-}
-
 /***** MEDIA QUERIES *****/
 
 @media screen and (min-width: 768px) {
@@ -48,7 +44,7 @@ nav {
     width: 310px;
     margin: 0 auto;
   }
-  .linkNav{
+  .linkNav {
     font-size: 20px;
     text-transform: none;
   }
@@ -59,7 +55,7 @@ nav {
 
 @media screen and (min-width: 1440px) {
   .header {
-    width: 1240px;
+    max-width: 1240px;
     margin: 40px auto;
   }
   .logo_kasa {
@@ -70,9 +66,9 @@ nav {
     font-size: 24px;
     text-transform: none;
     font-weight: 500;
-    margin: 0 50px;
+    margin: 0 0 0 57px;
   }
   nav {
-    margin: 0 57%;
+    margin: 0 58%;
   }
 }
