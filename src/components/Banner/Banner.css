@@ -1,49 +1,45 @@
 .banner {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 10px;
-  background-color: #000;
+  width: 86%;
+  height: 223px;
+  background: center no-repeat url(../../assets/IMG.svg);
+  border-radius: 25px;
   overflow: hidden;
-  margin: 20px;
-  min-width: 335px;
-  max-height: 111px;
+  position: relative;
+  margin: 60px auto;
 }
 
-.banner-img {
-  object-fit: cover;
-  opacity: 0.6;
+.bannerBack {
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  position: absolute;
 }
 
 .banner-title {
   position: absolute;
-  color: #fff;
-  font-family: "Montserrat";
-  font-size: 24px;
+  top: 20%;
+  left: 22%;
+  font-size: 48px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  margin-left: 16px;
 }
 
-.banner-title span {
-  display: block;
-}
-
-/***** MEDIA QUERIES *****/
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .banner {
-    max-height: 223px;
-    max-width: 1240px;
-    justify-content: center;
-    border-radius: 25px;
-    margin: 1% 7%;
+    height: 111px;
+    margin: 10px auto;
+    background-size: 190%;
+    border-radius: 10px;
   }
   .banner-title {
-    font-size: 48px;
+    top: 10%;
+    left: 5%;
+    font-size: 24px;
   }
   .banner-title span {
-    display: inline;
+    display: block;
   }
 }

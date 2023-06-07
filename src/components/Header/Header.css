@@ -1,74 +1,33 @@
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin: 20px auto;
-}
-
-.logo_kasa {
-  width: 145px;
-  height: 47px;
-  margin: 0 auto;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  width: 37%;
+  margin: 40px auto;
+  max-width: 86%;
+  height: 68px;
 }
 
 .linkNav {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  color: #ff6060;
-  margin: 1% 5%;
   text-decoration: none;
-  line-height: 17px;
-  white-space: nowrap;
+  color: #ff6060;
+  font-size: 24px;
+  margin-left: 50px;
+  font-family: "Montserrat";
+  font-weight: 500;
 }
 
-/***** MEDIA QUERIES *****/
+/***** RESPONSIVE *****/
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .header {
     margin: 20px auto;
-    justify-content: space-between;
   }
-  .logo_kasa {
-    margin: 0 auto;
-  }
-  nav {
-    width: 310px;
-    margin: 0 auto;
+  .logoKasa {
+    width: 145px;
   }
   .linkNav {
-    font-size: 20px;
-    text-transform: none;
-  }
-  .accueil {
-    margin-left: 50%;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .header {
-    max-width: 1240px;
-    margin: 40px auto;
-  }
-  .logo_kasa {
-    width: 210px;
-    height: 70px;
-  }
-  .linkNav {
-    font-size: 24px;
-    text-transform: none;
-    font-weight: 500;
-    margin: 0 0 0 57px;
-  }
-  nav {
-    margin: 0 58%;
+    font-size: 12px;
+    margin-left: 10px;
+    text-transform: uppercase;
   }
 }

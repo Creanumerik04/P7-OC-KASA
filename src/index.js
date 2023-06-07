@@ -5,7 +5,7 @@ import "./styles/index.css";
 import Home from "./pages/Home";
 import About from "./pages/About/about";
 import Header from "./components/Header/header";
-import Footer from "./components/Footer/footer";
+/* import Footer from "./components/Footer/footer"; */
 import Banner from "./components/Banner/Banner";
 import Error from "./components/Error/error";
 
@@ -15,7 +15,7 @@ root.render(
     <Router>
       <Header />
       <Banner />
-      <Footer />
+      {/* <Footer /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
